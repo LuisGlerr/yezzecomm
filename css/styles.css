@@ -1,0 +1,438 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/* * {
+    border: 1px solid #e1e1e1;
+} */
+
+
+/* ---------- GLOBALES ------------ */
+
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ---------------- UTILITIES --------------- */
+
+.text-center {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+/* ---------------- HEADER ------------------- */
+
+.site-header.start {
+    background: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.content-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    padding-top: 3rem;
+}
+
+.content-header h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    padding: 3rem 0;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.content-header h1::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .2rem;
+    background: #fff;
+    margin: 2rem auto;
+}
+
+.content-header p {
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* -------------- NAVEGACION --------------------- */
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3rem 0;
+    }
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* ----------- SECTION PLATFORM ----------------- */
+
+.section-platform {
+    background: url(../img/bg-plataforma-ecommerce.png);
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.column-1 {
+    flex: 1;
+}
+
+.icons-platform {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .container-flex {
+        height: 60rem;
+    }
+    .column-1 {
+        flex: 0 0 50%;
+        height: 60rem;
+    }
+    .movil-laptop {
+        display: none;
+    }
+}
+
+
+/* -------------- SECTION INTEGRATION ------------------------- */
+
+.section-integration {
+    background: url(../img/bg-disenio-usabilidad.png);
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+}
+
+.section-integration h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.container-flex-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card {
+    background: #fff;
+    margin-bottom: 2rem;
+    border: 1px solid #e1e1e1;
+}
+
+.card img {
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .container-flex-cards {
+        flex-direction: row;
+    }
+    .card {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+.card h3,
+.card p {
+    color: #000;
+    padding: 0 2rem;
+}
+
+
+/* ------------- SECTION PHOTO ---------------- */
+
+.section-photo {
+    background: #fff;
+}
+
+.container-flex-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .section-photo {
+        background: url(../img/bg-fotografia.png);
+        background-repeat: no-repeat;
+        height: 70rem;
+    }
+    .photo-content {
+        flex: 0 0 50%;
+    }
+    .photography {
+        display: none;
+    }
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    order: 1;
+}
+
+
+/* ---------------------- SECTION MKT ----------------------- */
+
+.section-mkt {
+    height: auto;
+}
+
+.container-flex-mkt {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .section-mkt {
+        background: url(../img/bg-consultoria.png);
+        background-repeat: no-repeat;
+        height: 70rem;
+    }
+    .container-flex-mkt {
+        height: 70rem;
+    }
+    .column-1-mkt {
+        flex: 0 0 50%;
+    }
+    .img-mkt {
+        display: none;
+    }
+}
+
+
+/* ----------------- SECTION CONTACT -------------------------------- */
+
+.section-contact {
+    background: url(../img/bg-form-hablamos.png);
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 3rem;
+    height: auto;
+}
+
+.section-contact .container h2 {
+    padding-top: 3rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.section-contact .container h2::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .2rem;
+    background: #fff;
+    margin: 1rem auto;
+}
+
+.container-flex-contact {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-1-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.column-1-contact input {
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.150);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 1rem;
+}
+
+.column-1-contact input::placeholder,
+.column-2-contact textarea::placeholder {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.column-2-contact textarea {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.column-2-contact p {
+    text-align: right;
+    padding-right: 3rem;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.800);
+}
+
+.content-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background: #d11242;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .section-contact {
+        height: 60rem;
+    }
+    .container-flex-contact {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .column-1-contact {
+        flex: 0 0 calc(50% - 1rem);
+        flex-direction: row;
+    }
+    .column-1-contact input {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .column-2-contact {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+
+/* ------------------ SECTION FOOTER --------------------- */
+
+.container-flex-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.container-flex-footer img {
+    padding-top: 2rem;
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.container-flex-footer p {
+    margin: 0;
+    font-weight: 400;
+}
+
+.container-flex-footer p span {
+    color: #d11242;
+}
+
+.container-flex-footer .copyright {
+    font-weight: 300;
+    color: #b6b6b6;
+}
+
+@media (min-width: 768px) {
+    .container-flex-footer img {
+        width: 10%;
+    }
+}
